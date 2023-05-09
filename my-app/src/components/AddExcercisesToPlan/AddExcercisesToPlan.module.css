@@ -1,0 +1,135 @@
+.list {
+    list-style-type: none;
+   
+}
+.AvilableExcercises {
+    background-color: #44444466;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    margin: 30px;
+    font-weight: bold;
+    border-radius: 1%;
+    border-color: rgb(8, 8, 8);
+    border-width: 3px;
+    border-style: solid;
+}
+.AvilableExcercisesTable {
+    table-layout: auto;
+    width: 100%;
+}
+.MyExcercisesTable {
+    table-layout: auto;
+    width: 100%;
+}
+.header {
+border-bottom: 1pt solid black;
+border-color: black;
+color: white;
+
+
+}
+.ExcercisesOnPlanList{
+background-color:  #44444466;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    margin: 30px;
+    font-weight: bold;
+    border-radius: 1%;
+    border-color: rgb(8, 8, 8);
+    border-width: 3px;
+    border-style: solid;
+
+    
+}
+.ExcerciseItem {
+
+
+
+
+}
+.ActionButton {
+display: inline-block;
+    background-color: #000000;
+    color: whitesmoke;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin: 10px 20px;
+    
+    text-align: center;
+    border-color: black;
+    border-width: 3px;
+    position: relative;
+
+}
+
+.DeleteButton {
+display: inline-block;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    padding: 5.5px 25px;
+    text-decoration: none;
+    margin: 0px 20px;
+        
+    text-align: center;
+    border-color: black;
+    border-width: 3px;
+    position: relative;
+    font-size: large;
+}
+    .ActionButton:hover{
+    border-width: 6px;
+    
+
+    }
+    .DeleteButton:hover{
+        border-width: 6px;
+    }
+
+    .ExcerciseName {
+        display: inline-block;
+        background-color: transparent;
+        font-weight: bold;
+        font-style: normal;
+        position:relative;
+        text-align: center;
+        color: white;
+
+
+    }
+    .MuscleGroup
+    {
+        display: inline-block;
+        background-color: transparent;
+        font-weight: bold;
+        font-style: normal;
+        font-size: larger;
+        margin: 0px 5px;
+        position: relative;
+        text-align: center;
+        color: white;
+
+
+    }
+    .tableRow {
+text-align: center;
+color: white;
+
+    }
+    .tableCol {
+        text-align: center;
+        width: 25%;
+        color: white;
+        
+            }
+            .box {
+                z-index: 2;
+            
+            
+            }
+            .kontener {
+                position: relative;
+                z-index: 1;
+                
+                }

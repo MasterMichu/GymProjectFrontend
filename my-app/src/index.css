@@ -1,0 +1,9 @@
+.background {
+height: 100%;
+
+}
+html, body, #app, #app>div {
+    height: 100%;
+background-image: url("./components/layout/background.jpeg") ;
+background-size: cover;
+  }

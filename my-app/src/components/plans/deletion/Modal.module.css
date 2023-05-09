@@ -1,0 +1,50 @@
+.Modal {
+    position:relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: whitesmoke;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0,0,0.2);
+    padding: 25px 50px 25px;
+    margin: 1% 5% 1% 1%;
+}
+.cancellbutton {
+    display: inline-block;
+    background-color: green;
+    color: whitesmoke;
+    padding: 15px 32px;
+    text-decoration: none;
+    margin: 0px 20px;
+    
+    text-align: center;
+    border-color: black;
+    border-width: 3px;
+    
+    }
+.deletebutton {
+    display: inline-block;
+    background-color: red;
+    color: whitesmoke;
+    padding: 15px 32px;
+    text-decoration: none;
+    margin: 0px 20px;
+        
+    text-align: center;
+    border-color: black;
+    border-width: 3px;
+        
+    }
+    .cancellbutton:hover{
+    border-width: 6px;
+    
+
+    }
+    .deletebutton:hover{
+        border-width: 6px;
+    }
+    .card {
+        background-color:white;
+        border-radious: 6px;
+    }
