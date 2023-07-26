@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import classes from "./card.module.css";
 
 function Card (props){

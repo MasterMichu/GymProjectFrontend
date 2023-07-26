@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import Card from "../UI/card";
 import Modal from "./deletion/Modal";
 import Backdrop from "./deletion/Backdrop";

@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import Delete from './Delate';
 import {useState} from "react";
 import classes from './Modal.module.css';

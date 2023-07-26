@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import {useParams} from 'react-router-dom';
 import {useState,useEffect} from "react";
 import ExcercisesForm from "../components/CreateTrainingLog/excercisesform"

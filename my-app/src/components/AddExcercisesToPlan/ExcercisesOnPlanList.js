@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import ExcercisesOnPlan from './ExcercisesOnPlan';
 import Card from "../UI/card";
 import classes from './AddExcercisesToPlan.module.css';

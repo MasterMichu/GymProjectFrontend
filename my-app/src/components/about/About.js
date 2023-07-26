@@ -1,3 +1,4 @@
+import ReactDOM from 'react-dom';
 import React, { useState, useEffect, Fragment } from 'react';
 import AboutContent from './AboutContent';
 
