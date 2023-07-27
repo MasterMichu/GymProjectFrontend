@@ -1,0 +1,10 @@
+{"web": {
+    "build": {
+      "babel": {
+        "include": [
+          "./components/CreateTrainingLog/excercisesform.js"
+        ]
+      }
+    }
+  }
+}

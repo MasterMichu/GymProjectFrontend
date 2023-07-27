@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
-import React, { useState } from 'react';
-import sendObjectsToApi from "./OnSubmisionOfTrainingResult";
-import Card from '../UI/card';
+import React,{ useState } from 'react';
+import sendObjectsToApi from "./OnSubmisionOfTrainingResult.js";
+import Card from '../UI/card.js';
 import classes from './excercisesform.module.css';
 
 

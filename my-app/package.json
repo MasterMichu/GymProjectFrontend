@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "babel-loader": "^8.0.5",
+    "babel-loader": "^9.1.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-google-charts": "^4.0.0",
@@ -19,12 +21,19 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "transpile": "NODE_ENV=production npx babel --out-dir ../build --relative --copy-files src"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
     ]
   },
   "browserslist": {
@@ -42,10 +51,9 @@
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
-    "@babel/preset-react": "^7.22.5",
-    "html-webpack-plugin": "^4.0.0",
-    "webpack": "^4.28.3",
-    "webpack-cli": "^4.3.0",
-    "webpack-dev-server": "^3.1.14"
+    "babel-cli": "^6.26.0",
+    "html-webpack-plugin": "^5.5.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   }
 }
