@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gym-tracker-app.azurewebsites.net",
   "dependencies": {
     "@babel/cli": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
