@@ -14,11 +14,12 @@ import Signup from "./components/auth/Signup";
 import About from "./components/about/About";
 import AddExcercises from "./pages/AddExcercises";
 import classes from "./App.module.css";
+const background = require('./components/layout/background.jpeg');
 
 
 
 function App() {
-  return<div >
+  return<div style={{ backgroundImage: background, backgroundSize:"cover",height:"100%" }}>
   <MainNavigation />
     <Routes>
         <Route path="/" element={< About/>}/>
