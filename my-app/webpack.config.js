@@ -78,7 +78,7 @@ module.exports = ({ mode } = { mode: "production" }) => {
             plugins: [
                 new HtmlWebpackPlugin({
                     template: "./public/index.html",
-                    publicPath: '/',
+                    publicPath: 'auto',
                 }),
             ]
         }
