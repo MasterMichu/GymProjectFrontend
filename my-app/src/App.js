@@ -14,7 +14,7 @@ import Signup from "./components/auth/Signup";
 import About from "./components/about/About";
 import AddExcercises from "./pages/AddExcercises";
 import classes from "./App.module.css";
-const background = require('./components/layout/background.jpeg');
+const background = require('../public/background.jpeg');
 
 
 
