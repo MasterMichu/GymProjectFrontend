@@ -14,7 +14,7 @@ function sendObjectsToApi(formdata){
     return response.json();
     })
     .then((data) => {
-    window.location.replace('https://gym-tracker-app.azurewebsites.net/Charts');
+    window.location.replace('https://api-gym-tracker.azurewebsites.net/Charts');
 }
 );
     }

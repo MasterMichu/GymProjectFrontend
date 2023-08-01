@@ -9,7 +9,7 @@ const Login = () => {
 
   useEffect(() => {
     if (localStorage.getItem('token') !== null) {
-      window.location.replace('https://gym-tracker-app.azurewebsites.net/about');
+      window.location.replace('https://api-gym-tracker.azurewebsites.net/about');
     } else {
       setLoading(false);
     }
@@ -35,7 +35,7 @@ const Login = () => {
         if (data.key) {
           localStorage.clear();
           localStorage.setItem('token', data.key);
-          window.location.replace('https://gym-tracker-app.azurewebsites.net/about');
+          window.location.replace('https://api-gym-tracker.azurewebsites.net/about');
         } else {
           setEmail('');
           setPassword('');
