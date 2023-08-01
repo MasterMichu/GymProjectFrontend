@@ -12,6 +12,9 @@ module.exports = ({ mode } = { mode: "production" }) => {
         {
             test: /\.css$/i,
             use: ["style-loader", "css-loader"],
+            options: {
+                url: true,
+            }
           },
             
     
@@ -36,9 +39,32 @@ module.exports = ({ mode } = { mode: "production" }) => {
                     exclude: /node_modules/,
                     use: ["babel-loader"],
                   },
+                  { 
+                    test: /\.css$/,
+                use: [
+                    {
+                        loader: "style-loader",
+                        options: { 
+                            injectType: "styleTag" 
+                        },
+                    },
+                    {loader: 'css-loader',
+                    options: { url: false } // tell css-loader to not package images referenced in css. perhaps re-activate this for base64 injection
+                    },
+                ]
+                  },
                   {
-                    test: /\.css$/i,
-                    use: ["style-loader", "css-loader"],
+                    test: /\.(png|jpg|gif)$/,
+                    type: 'asset/resource'
+                },
+                
+                  {
+                    test: /\.scss$/,
+                    use: [
+                      { loader: "style-loader" },
+                      { loader: "css-loader" },
+                      { loader: "sass-loader" }
+                    ]
                   },
                 ]
             },
