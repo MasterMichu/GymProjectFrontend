@@ -49,17 +49,14 @@ module.exports = ({ mode } = { mode: "production" }) => {
                         },
                     },
                     {loader: 'css-loader',
-                    options: { url: false } // tell css-loader to not package images referenced in css. perhaps re-activate this for base64 injection
+                    options: { url: true } // tell css-loader to not package images referenced in css. perhaps re-activate this for base64 injection
                     },
                 ]
                   },
                   {
-                    test: /\.(png|jpeg|gif)$/,
-                    use: [{
-                        loader: 'file-loader',
-                        options: {}
-                    }]
-                },
+                    test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                    type: 'asset/inline',
+                  },
                 
                   {
                     test: /\.scss$/,

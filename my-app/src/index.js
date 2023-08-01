@@ -5,10 +5,15 @@ import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
 
 import classes from './index.css';
-import App from './App'
+import App from './App';
+import backgroundimg from  "../public/background.jpeg";
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
+document.body.style.background= `url(${backgroundimg})`;
+document.body.style.height="100%";
+document.body.style.backgroundSize="cover";
+
 
 root.render(
   <BrowserRouter>
