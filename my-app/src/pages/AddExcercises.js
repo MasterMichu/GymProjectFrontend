@@ -21,7 +21,7 @@ function AddExcercises() {
     }
     useEffect(()=>{
     setIsLoading(true);
-    fetch("http://127.0.0.1:8000/plansapi/excercises/",
+    fetch("https://api-gym-tracker.azurewebsites.net/plansapi/excercises/",
         {
         headers:
             {
@@ -47,7 +47,7 @@ function AddExcercises() {
     },[]);
     useEffect(()=>{
     setIsLoading(true);
-    fetch("http://127.0.0.1:8000/plansapi/previewexercisesonplan/"+id,
+    fetch("https://api-gym-tracker.azurewebsites.net/plansapi/previewexercisesonplan/"+id,
         {
         headers:
             {

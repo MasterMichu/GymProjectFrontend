@@ -9,7 +9,7 @@ const About = () => {
   useEffect(() => {
     if (localStorage.getItem('token') === null) {
     } else {
-      fetch('http://127.0.0.1:8000/apiaccounts/auth/user/', {
+      fetch('https://api-gym-tracker.azurewebsites.net/apiaccounts/auth/user/', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

@@ -15,7 +15,7 @@ const Logout = () => {
   const handleLogout = e => {
     e.preventDefault();
 
-    fetch('http://127.0.0.1:8000/apiaccounts/auth/logout/', {
+    fetch('https://api-gym-tracker.azurewebsites.net/apiaccounts/auth/logout/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

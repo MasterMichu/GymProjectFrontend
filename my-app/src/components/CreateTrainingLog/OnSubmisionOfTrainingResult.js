@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 function sendObjectsToApi(formdata){
   for (const obj of formdata) {
-      fetch("http://127.0.0.1:8000/plansapi/recordresults/", {
+      fetch("https://api-gym-tracker.azurewebsites.net/plansapi/recordresults/", {
         method: 'POST',
         headers: {
         'Content-Type': 'application/json',

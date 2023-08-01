@@ -23,7 +23,7 @@ const Login = () => {
       password: password
     };
 
-    fetch('http://127.0.0.1:8000/apiaccounts/auth/login/', {
+    fetch('https://api-gym-tracker.azurewebsites.net/apiaccounts/auth/login/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
