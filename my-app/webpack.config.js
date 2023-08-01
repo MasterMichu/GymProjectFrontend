@@ -24,6 +24,9 @@ module.exports = ({ mode } = { mode: "production" }) => {
     return {
             mode,
             entry: "./src/index.js",
+            externals: {
+              charts: 'react-google-charts'  // or any other alias you want, can be a regex too! check Webpack's doc for more
+            },
             output: {
                 publicPath: "/",
                 path: path.resolve(__dirname, "build"),
@@ -39,6 +42,7 @@ module.exports = ({ mode } = { mode: "production" }) => {
                     exclude: /node_modules/,
                     use: ["babel-loader"],
                   },
+                  { test: require.resolve("react-google-charts"), use:{loader: "expose-loader",options:{exposes:["Chart","react-google-charts"] }}},
                   { 
                     test: /\.css$/,
                 use: [

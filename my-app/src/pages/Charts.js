@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom';
 import { Chart } from "react-google-charts";
-import {React,useEffect, useState} from "react";
+import React from 'react';
+import {useEffect, useState} from "react";
 import classes from './Charts.module.css';
 export const data = [
   ["Year", "Sales", "Expenses"],
