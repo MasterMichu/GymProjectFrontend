@@ -20,6 +20,7 @@ import classes from "./App.module.css";
 function App() {
   return<div>
   <MainNavigation />
+  
     <Routes>
         <Route path="/" element={< About/>}/>
         <Route path='/AllPlans' element={<AllPlans/>}/>
@@ -30,15 +31,10 @@ function App() {
         <Route path="/Login" element={< Login/>}/>
         <Route path="/Logout" element={< Logout/>}/>
         <Route path="/Signup" element={< Signup/>}/>
-        <Route path="AddExcercises" >
-        <Route path=":id" element={<AddExcercises/>}/>
-        </Route>
-        <Route path="PreviewExcercisesOnPlan">
-        <Route path=":id" element={<PreviewExcercisesOnPlan/>}/>
-        </Route>
-        <Route path="recordresults">
-        <Route path=":id" element={<RecordResults/>}/>
-        </Route>
+        <Route path="AddExcercises/:id" element={<AddExcercises/>}/>
+        <Route path="previewexcercisesonplan/:id" element={<PreviewExcercisesOnPlan/>}/>
+        <Route path="recordresults/:id" element={<RecordResults/>}/>
+        
 
 
     </Routes>

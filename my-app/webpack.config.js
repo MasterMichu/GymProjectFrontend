@@ -68,9 +68,13 @@ module.exports = ({ mode } = { mode: "production" }) => {
                   },
                 ]
             },
+            devServer: {
+              historyApiFallback: true,
+            },
             plugins: [
                 new HtmlWebpackPlugin({
-                    template: "./public/index.html"
+                    template: "./public/index.html",
+                    publicPath: '/',
                 }),
             ]
         }

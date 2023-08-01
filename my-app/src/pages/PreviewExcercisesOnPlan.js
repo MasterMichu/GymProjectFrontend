@@ -8,7 +8,7 @@ import Backdrop from "../components/AddExcercisesToPlan/ShowExcerciseDetails/Bac
 import ShowExcerciseDetails from "../components/AddExcercisesToPlan/ShowExcerciseDetails/ShowExcerciseDetails";
 import classes from './AddExcercises.module.css';
 function PreviewExcercisesOnPlan() {
-    let {id} = useParams();
+    const {id} = useParams();
     console.log(id);
     const [triggerReload,setTriggerReload] = useState(0);
     const [isLoading,setIsLoading]=useState(true);
