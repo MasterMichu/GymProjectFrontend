@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {useState,useEffect} from'react';
+import {useState,useEffect} from 'react';
 import NewPlanForm from '../components/plans/Creation/NewPlanForm';
 import classes from './AddPlan.module.css';
 
