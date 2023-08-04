@@ -38,7 +38,7 @@
     "transpile": "NODE_ENV=production npx babel --out-dir ../build --relative --copy-files src",
     "webpack-dev-server": "webpack-dev-server",
     "dev": "npm run webpack-dev-server -- --env mode=development",
-    "prod": "npm run webpack -- --env mode=production"
+    "prod": "npm run webpack -- --env mode=production && mv web.config build/web.config"
   },
   "eslintConfig": {
     "extends": [
