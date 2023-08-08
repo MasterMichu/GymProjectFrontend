@@ -1,0 +1,23 @@
+.picture
+{
+    position: relative;
+    float: left;
+    height: auto;
+    width: 50%;
+    border-color: white;
+    border-style: solid;
+    object-fit: contain;
+
+
+}
+.box {
+    color: white;
+    position:relative;
+    float:left
+
+
+}
+.pictureplaceholder{
+    width: 100%;
+    display: inline-block;
+}
