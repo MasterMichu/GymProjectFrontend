@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {useEffect} from 'react'
 function AddPlanHandler(props) {
     useEffect(() => {const adderData={"planname":props.planid,"excercise":props.excercise,"owner":1}
-    fetch('https://api-gym-tracker.azurewebsites.net/plansapi/addplan/',
+    fetch('http://127.0.0.1:8000/plansapi/addplan/',
     {method: 'POST',
     body: JSON.stringify(adderData),
     headers: {

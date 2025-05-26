@@ -1,69 +1,69 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://gym-tracker-app.azurewebsites.net",
-  "dependencies": {
-    "@babel/cli": "^7.22.9",
-    "@babel/preset-react": "^7.22.5",
-    "@babel/runtime": "^7.22.6",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^6.8.1",
-    "expose-loader": "^4.1.0",
-    "html-webpack-plugin": "^5.5.3",
-    "mini-css-extract-plugin": "^2.7.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-google-charts": "^4.0.0",
-    "react-icons": "^4.8.0",
-    "react-router-dom": "^6.9.0",
-    "react-scripts": "^2.1.3",
-    "sass": "^1.64.1",
-    "sass-loader": "^13.3.2",
-    "style-loader": "^3.3.3",
-    "web-vitals": "^2.1.4",
-    "webpack": "^5.88.2",
-    "webpack-dev-server": "^4.15.1"
-  },
-  "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "webpack": "webpack",
-    "transpile": "NODE_ENV=production npx babel --out-dir ../build --relative --copy-files src",
-    "webpack-dev-server": "webpack-dev-server",
-    "dev": "npm run webpack-dev-server -- --env mode=development",
-    "prod": "npm run webpack -- --env mode=production && mv web.config build/web.config"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.22.9",
-    "@babel/preset-env": "^7.22.9",
-    "babel-cli": "^6.26.0",
-    "file-loader": "^6.2.0",
-    "url-loader": "^4.1.1",
-    "webpack-cli": "^5.1.4"
-  }
+    "name": "my-app",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "http://localhost:3001",
+    "dependencies": {
+        "@babel/cli": "^7.22.9",
+        "@babel/preset-react": "^7.22.5",
+        "@babel/runtime": "^7.22.6",
+        "@testing-library/jest-dom": "^5.16.5",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "babel-plugin-transform-class-properties": "^6.18.0",
+        "babel-preset-react": "^6.24.1",
+        "css-loader": "^6.8.1",
+        "expose-loader": "^4.1.0",
+        "html-webpack-plugin": "^5.5.3",
+        "mini-css-extract-plugin": "^2.7.6",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-google-charts": "^4.0.0",
+        "react-icons": "^4.8.0",
+        "react-router-dom": "^6.9.0",
+        "react-scripts": "^5.0.1",
+        "sass": "^1.64.1",
+        "sass-loader": "^13.3.2",
+        "style-loader": "^3.3.3",
+        "web-vitals": "^2.1.4",
+        "webpack": "^5.88.2",
+        "webpack-dev-server": "^4.15.1"
+    },
+    "scripts": {
+        "start": "react-scripts --openssl-legacy-provider start",
+        "build": "react-scripts --openssl-legacy-provider build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "webpack": "webpack",
+        "transpile": "NODE_ENV=production npx babel --out-dir ../build --relative --copy-files src",
+        "webpack-dev-server": "webpack-dev-server",
+        "dev": "npm run webpack-dev-server -- --env mode=development",
+        "prod": "npm run webpack -- --env mode=production && mv web.config build/web.config"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/core": "^7.22.9",
+        "@babel/preset-env": "^7.22.9",
+        "babel-cli": "^6.26.0",
+        "file-loader": "^6.2.0",
+        "url-loader": "^4.1.1",
+        "webpack-cli": "^5.1.4"
+    }
 }

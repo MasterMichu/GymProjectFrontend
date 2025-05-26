@@ -6,7 +6,7 @@ import {createRoot} from 'react-dom/client';
 
 import classes from './index.css';
 import App from './App';
-import backgroundimg from  "../public/background.jpeg";
+import backgroundimg from  "./public/background.jpeg";
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);

@@ -71,7 +71,7 @@ function ChartGenerator(props) {
 
 }
 useEffect(()=>{
-    fetch("https://api-gym-tracker.azurewebsites.net/plansapi/trainingresults/",
+    fetch("http://127.0.0.1:8000/plansapi/trainingresults/",
         {
         headers:
             {

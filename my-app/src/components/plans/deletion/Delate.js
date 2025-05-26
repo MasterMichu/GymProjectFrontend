@@ -12,7 +12,7 @@ function Delete(props) {
     console.log(id);
     useEffect(()=>{
     setIsLoading(true);
-    fetch("https://api-gym-tracker.azurewebsites.net/plansapi/deleteplanname/"+id,
+    fetch("http://127.0.0.1:8000/plansapi/deleteplanname/"+id,
         { method: "DELETE",
         headers:
             {

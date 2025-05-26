@@ -4,7 +4,7 @@ function SendHandler({ formData, onApiResponse }) {
   useEffect(() => {
     const sendData = async () => {
       try {
-        const response = await fetch("https://api-gym-tracker.azurewebsites.net/plansapi/recordresults/", {
+        const response = await fetch("http://127.0.0.1:8000/plansapi/recordresults/", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

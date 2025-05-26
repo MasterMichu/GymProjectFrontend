@@ -11,7 +11,7 @@ function AddPlan() {
     window.location.replace(`/AddExcercises/${props.planid}`);
     }
     function AddPlanHandler(PlanData) {
-    fetch('https://api-gym-tracker.azurewebsites.net/plansapi/plans/',
+    fetch('http://127.0.0.1:8000/plansapi/plans/',
     {method: 'POST',
     body: JSON.stringify(PlanData),
     headers: {

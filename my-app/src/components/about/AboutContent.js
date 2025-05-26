@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainNavigation from  "../../../public/MainNavigation.png";
-import LoginScreen from  "../../../public/LoginScreen.png";
-import PlansModification from  "../../../public/PlansModification.png";
-import AllPlans from  "../../../public/AllPlans.png";
+import MainNavigation from  "../../public/MainNavigation.png";
+import LoginScreen from  "../../public/LoginScreen.png";
+import PlansModification from  "../../public/PlansModification.png";
+import AllPlans from  "../../public/AllPlans.png";
 import styles from "./AboutContent.Module.css";
 function AboutContent() {
 return (

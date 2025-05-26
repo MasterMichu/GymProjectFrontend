@@ -10,7 +10,7 @@ const Signup = () => {
 
   useEffect(() => {
     if (localStorage.getItem('token') !== null) {
-      window.location.replace('https://gym-tracker-app.azurewebsites.net/about');
+      window.location.replace('http://localhost:3001/about');
     } else {
       setLoading(false);
     }
@@ -25,7 +25,7 @@ const Signup = () => {
       password2: password2
     };
 
-    fetch('https://api-gym-tracker.azurewebsites.net/apiaccounts/auth/register/', {
+    fetch('http://127.0.0.1:8000/apiaccounts/auth/register/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ const Signup = () => {
         if (data.key) {
           localStorage.clear();
           localStorage.setItem('token', data.key);
-          window.location.replace('https://gym-tracker-app.azurewebsites.net/about');
+          window.location.replace('http://localhost:3001/about');
         } else {
           setEmail('');
           setPassword1('');

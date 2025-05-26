@@ -11,7 +11,7 @@ function AllPlans() {
     }
     useEffect(()=>{
     setIsLoading(true);
-    fetch("https://api-gym-tracker.azurewebsites.net/plansapi/plans/",
+    fetch("http://127.0.0.1:8000/plansapi/plans/",
         {
         headers:
             {

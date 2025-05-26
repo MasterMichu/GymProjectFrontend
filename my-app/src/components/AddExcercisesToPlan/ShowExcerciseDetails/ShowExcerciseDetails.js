@@ -12,7 +12,7 @@ function ShowExcerciseDetails(props) {
     console.log(id);
     useEffect(()=>{
     setIsLoading(true);
-    fetch("https://api-gym-tracker.azurewebsites.net/plansapi/excercisedetails/"+id,
+    fetch("http://127.0.0.1:8000/plansapi/excercisedetails/"+id,
         {
         headers:
             {

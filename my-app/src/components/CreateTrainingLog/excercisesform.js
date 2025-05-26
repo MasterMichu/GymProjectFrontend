@@ -25,7 +25,7 @@ function ExcercisesForm(props) {
 
   const sendObjectToApi = async (formData) => {
     try {
-      const response = await fetch("https://api-gym-tracker.azurewebsites.net/plansapi/recordresults/", {
+      const response = await fetch("http://127.0.0.1:8000/plansapi/recordresults/", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ function ExcercisesForm(props) {
       setIsSubmitting(true);
       await Promise.all(formValuesWithDate.map(sendObjectToApi)); // Call API for each formdata item
       setIsSubmitting(false);
-      window.location.replace('https://gym-tracker-app.azurewebsites.net/Charts');
+      window.location.replace('http://localhost:3001/Charts');
     } catch (error) {
       console.error(error);
       setIsSubmitting(false);
